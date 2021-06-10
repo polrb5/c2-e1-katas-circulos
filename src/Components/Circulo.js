@@ -1,10 +1,10 @@
 export const Circulo = (props) => {
-  const {  cambiarEstado } = props;
+  const { cambiarEstado, estado } = props;
   return (
-        <li className="Circle" onClick={cambiarEstado}>
-
-        </li>
-      ))}
-
+    <li
+      className="circle"
+      onClick={cambiarEstado}
+      style={{ backgroundColor: estado ? "orange" : "gray" }}
+    ></li>
   );
 };
